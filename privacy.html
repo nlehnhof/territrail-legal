@@ -28,6 +28,7 @@
 <p><strong>Profile.</strong> A username you choose (3&ndash;20 letters, numbers or underscores). It is shown to other players, for example on the leaderboard. Do not use your real name or other personal details as a username.</p>
 <p><strong>Precise location.</strong> While a run is active, the app reads your device&rsquo;s GPS location, including in the background if you grant that permission, so a run can continue with the screen off. A notification and, on iOS, a location indicator are shown while this is happening. Location is not collected when you are not running. Batches of GPS points (latitude, longitude and time) are sent to our servers about every 15 seconds during a run. The server converts each point into the map tile it falls in, checks that the movement is physically plausible (to prevent cheating), and then discards the raw points. We keep only the most recent point of each run for that plausibility check, plus the list of tiles you passed through and when. We do not store a full GPS trail of your route.</p>
 <p><strong>Run and game data.</strong> Start and end time and distance of each run, which tiles you own, challenges against tiles, and private notifications about activity on your tiles (for example &ldquo;a rival attacked your tile&rdquo;).</p>
+<p><strong>Reports.</strong> If you report another player from the leaderboard, we store your account, the reported account, the reason you chose and the time. Reports are used only to review and enforce our rules and are not visible to other players. The list of players you hide is stored only on your device.</p>
 <p><strong>Feedback.</strong> If you send feedback or a bug report from the app, we store the category, your message and the time, linked to your account.</p>
 <p><strong>On your device.</strong> Your preferences (such as kilometers or miles), whether you finished onboarding, a cached copy of your run history, and your sign-in session are stored on your device.</p>
 <p><strong>Technical data.</strong> Our hosting and service providers may process your IP address and standard request information to deliver the service and protect it from abuse.</p>
@@ -35,7 +36,7 @@
 <h2>How we use information</h2>
 <ul>
 <li>To run the game: record runs, claim, defend and contest territory, show the map and leaderboard.</li>
-<li>To keep the game fair: detect impossible movement, duplicate submissions and abuse, and apply rate limits.</li>
+<li>To keep the game fair and safe: detect impossible movement, duplicate submissions and abuse, apply rate limits, filter objectionable usernames, and review player reports.</li>
 <li>To operate and secure the service, respond to feedback, and fix bugs.</li>
 </ul>
 <p>We do not use your data for advertising, and we do not build profiles for marketing.</p>
@@ -50,7 +51,7 @@
 <p class="note">Because owned tiles are small, other players may be able to infer where you tend to run. If that concerns you, avoid claiming tiles near your home or workplace, or delete your account.</p>
 
 <h2>Who we share information with</h2>
-<p>We do not sell personal information. We use these service providers to run the app, and they process data only to provide their service:</p>
+<p>We do not sell personal information. We use these service providers to run the app. They process data only to provide their service, and we choose providers that commit to protecting data to the same standard we describe here:</p>
 <ul>
 <li><strong>Supabase</strong> &mdash; database, authentication and server functions (hosted in the United States).</li>
 <li><strong>Apple and Google</strong> &mdash; if you choose Sign in with Apple or Google, they authenticate you and share the account details described above.</li>
@@ -60,7 +61,7 @@
 <p>We may also disclose information if required by law, or to protect the safety, rights or security of users or the service.</p>
 
 <h2>Retention and deletion</h2>
-<p>We keep your information while your account exists. You can delete your account in the app (Profile &rarr; Delete Account). Deletion permanently removes your account, profile, runs, passed-tile records, challenges and tile notifications. Tiles you owned become unowned and can be claimed by others. Feedback you sent is kept but is no longer linked to you. Data may remain in encrypted backups for a limited period before it is overwritten. You can also request deletion by sending feedback in the app if you cannot sign in.</p>
+<p>We keep your information while your account exists. You can delete your account in the app (Profile &rarr; Delete Account). Deletion permanently removes your account, profile, runs, passed-tile records, challenges and tile notifications. Tiles you owned become unowned and can be claimed by others. Reports you made or that were made about you are deleted with the account. Feedback you sent is kept but is no longer linked to you. Data may remain in encrypted backups for a limited period before it is overwritten. You can also request deletion by sending feedback in the app if you cannot sign in.</p>
 
 <h2>Security</h2>
 <p>Data is transmitted over encrypted connections (HTTPS/TLS), and database access is restricted by per-user access rules. No system is perfectly secure, so we cannot guarantee absolute security.</p>
